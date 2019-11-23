@@ -1,7 +1,7 @@
 // Home Content
 
 .home {
-
+  padding-top: 15rem;
   .intro {
     
     img {
@@ -33,6 +33,10 @@
       border-radius: 20px;
       height: 100%;
       .enlarge-on-mobile;
+    }
+
+    img:hover {
+      .shake-animation;
     }
 
     img:nth-child(2) {
@@ -90,7 +94,9 @@
 
       .btn:hover {
         background: @porcelain;
-        color: @btn-bg-color;
+        a {
+          color: @btn-bg-color;
+        }
 
       } 
     }
