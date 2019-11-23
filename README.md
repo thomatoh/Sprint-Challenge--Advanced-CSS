@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Adaptive and responsive websites could often be noted as being on a spectrum of fixed to responsive. Both adaptive and responsive are on the far end of the responsive side of the spectrum with adaptive being not as far as responsive. That being said, adaptive sites adopt media queries to change styling at certain fixed points but still retain hard-coded pixels for styling the page. Responsive have media queries and incorporate rem or percentages for a more dynamic styling.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+This approach refers to how you want to start designing your web app. You could start from building the mobile layout first and then media query onto bigger mediums such as desktops or vice versa. So your base CSS would be for mobile or desktop depending on which approach you decide to give a go.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+This is a highly preferred way to set font-size when using rem as your units. Setting the font-size to 62.5% changes pixel size to 10px, which makes the math more simple when using rem.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+LESS is a different and more powerful way to write CSS. Due to its different syntax from CSS, the computer can not understand it. We would then use a compiler that can rearrange the LESS code into CSS code so it could be understood.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+Nesting is a good concept that clumps all the relevant code together. Mixins and variables could clear up a lot of space, and it follows the coding practice of DRY (don’t repeat yourself). Nesting media queries allows you to see the code that you’re trying to change as well. Imports are the best, and allows you to organize your code. LESS is great! The concept I struggle in is finding a use for all of its functionality. If statements seems to be impractical at the moment as I have no current knowledge to dynamically assign variables.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

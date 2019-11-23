@@ -1,1 +1,30 @@
 // Mixins Here
+
+.flex(@direction: row) {
+    display: flex;
+    flex-direction: @direction;
+}
+
+.button(@font-color; @button-color) {
+    color: @font-color;
+    background: @button-color;
+    font-size: 1.8rem;
+    width: 10rem;
+    padding: 1rem 0;
+    text-align: center;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+.hide-on-mobile {
+    @media @mobile {
+        display: none;
+    }
+}
+
+.enlarge-on-mobile {
+    @media @mobile {
+        width: 90%;
+        margin: 2rem auto;
+    }
+}

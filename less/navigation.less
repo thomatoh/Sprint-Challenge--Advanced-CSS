@@ -1,1 +1,24 @@
 // Navigation code here
+
+.div-nav {
+    margin: @small auto 0 auto;
+    background: @wild-sand;
+    .flex(column);
+    align-items: center;
+
+    h1 {
+        margin: @small;
+    }
+
+    nav{
+        width: 40%;
+        .flex();
+        justify-content: space-between;
+        padding-bottom: @small;
+        @media @mobile {
+            width: 100%;
+            justify-content: space-around;
+        }
+    }
+
+}
